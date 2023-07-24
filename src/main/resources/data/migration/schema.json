@@ -1,0 +1,117 @@
+{
+  "user": {
+    "id": 1,
+    "firstName": "Serhii",
+    "lastName": "Diakonov",
+    "login": "serg",
+    "password": "",
+    "roles": [
+      {
+        "id": 1,
+        "chat": {
+          "id": 1,
+          "createdAt": "2022-02-02",
+          "name": "Common chat",
+          "description": "This is a common chat which is for everyone",
+          "icon": "localhost:8080/icon/chat/1",
+          "creator": {
+            "id": 1,
+            "firstName": "Serhii",
+            "lastName": "Diakonov",
+            "login": "serg",
+            "password": "",
+            "role": {
+              "id": 1,
+              "role": "admin"
+            }
+          },
+          "admins": [
+            {
+              "id": 1,
+              "firstName": "Serhii",
+              "lastName": "Diakonov",
+              "login": "serg",
+              "password": "",
+              "role": {
+                "id": 1,
+                "role": "admin"
+              }
+            }
+          ],
+          "restrictedUsers": null,
+          "allowedUsers": null,
+          "content": [
+            {
+              "id": 1,
+              "sentAt": "2022-02-02T14:00:10",
+              "sender": {
+                "id": 1,
+                "firstName": "Serhii",
+                "lastName": "Diakonov",
+                "login": "serg",
+                "password": "",
+                "role": {
+                  "id": 1,
+                  "role": "admin"
+                }
+              },
+              "message": "First message. You can buy it as NFT later, as the first tweet was))"
+            }
+          ]
+        },
+        "role": "admin"
+      }
+    ]
+  },
+  "chat": {
+    "id": 1,
+    "createdAt": "2022-02-02",
+    "name": "Common chat",
+    "description": "This is a common chat which is for everyone",
+    "icon": "localhost:8080/icon/chat/1",
+    "creator": {
+      "id": 1,
+      "firstName": "Serhii",
+      "lastName": "Diakonov",
+      "login": "serg",
+      "password": "",
+      "role": {
+        "id": 1,
+        "role": "admin"
+      }
+    },
+    "admins": [
+      {
+        "id": 1,
+        "firstName": "Serhii",
+        "lastName": "Diakonov",
+        "login": "serg",
+        "password": "",
+        "role": {
+          "id": 1,
+          "role": "admin"
+        }
+      }
+    ],
+    "restrictedUsers": null,
+    "allowedUsers": null,
+    "content": [
+      {
+        "id": 1,
+        "sentAt": "2022-02-02T14:00:10",
+        "sender": {
+          "id": 1,
+          "firstName": "Serhii",
+          "lastName": "Diakonov",
+          "login": "serg",
+          "password": "",
+          "role": {
+            "id": 1,
+            "role": "admin"
+          }
+        },
+        "message": "First message. You can buy it as NFT later, as the first tweet was))"
+      }
+    ]
+  }
+}
