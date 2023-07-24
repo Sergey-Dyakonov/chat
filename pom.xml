@@ -56,10 +56,10 @@
             <artifactId>spring-boot-starter-data-rest</artifactId>
         </dependency>
 
-<!--        <dependency>-->
-<!--            <groupId>org.springframework.boot</groupId>-->
-<!--            <artifactId>spring-boot-starter-security</artifactId>-->
-<!--        </dependency>-->
+        <!--        <dependency>-->
+        <!--            <groupId>org.springframework.boot</groupId>-->
+        <!--            <artifactId>spring-boot-starter-security</artifactId>-->
+        <!--        </dependency>-->
 
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -141,6 +141,12 @@
             <artifactId>jquery</artifactId>
             <version>3.1.1-1</version>
         </dependency>
+
+        <dependency>
+            <groupId>org.cognitor.cassandra</groupId>
+            <artifactId>cassandra-migration</artifactId>
+            <version>2.6.0_v4</version>
+        </dependency>
     </dependencies>
 
     <build>
@@ -155,6 +161,21 @@
                             <artifactId>lombok</artifactId>
                         </exclude>
                     </excludes>
+                </configuration>
+            </plugin>
+
+            <plugin>
+                <groupId>org.flywaydb</groupId>
+                <artifactId>flyway-maven-plugin</artifactId>
+                <version>9.16.1</version>
+                <configuration>
+                    <user>chat</user>
+                    <password>chat</password>
+                    <schemas>users</schemas>
+                    <url>jdbc:postgresql://localhost:5432/users</url>
+                    <locations>
+                        <location>filesystem:src/main/resources/data/migration/postgres</location>
+                    </locations>
                 </configuration>
             </plugin>
         </plugins>
